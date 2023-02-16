@@ -1,0 +1,10 @@
+
+CREATE DATABASE Davi;
+USE Davi;
+
+
+CREATE TABLE Pessoa (
+  
+  cpf INT PRIMARY KEY ,
+	nome VARCHAR(45));
+
