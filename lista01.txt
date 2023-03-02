@@ -1,0 +1,3 @@
+Pesquise e descreva: no contexto de programação, o que é uma “biblioteca” e o que é uma “API”? Diferencie ambas utilizando as suas próprias palavras.
+
+ Ela é um conjunto de subprogramas ou funções, geralmente organizadas em classes, que podem ser usadas para a construção de um software ou aplicativo mobile.
