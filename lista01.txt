@@ -1,3 +1,34 @@
-Pesquise e descreva: no contexto de programação, o que é uma “biblioteca” e o que é uma “API”? Diferencie ambas utilizando as suas próprias palavras.
+1 - Pesquise e descreva: no contexto de programação, o que é uma “biblioteca” e o que é uma “API”? Diferencie ambas utilizando as suas próprias palavras.
 
  Ela é um conjunto de subprogramas ou funções, geralmente organizadas em classes, que podem ser usadas para a construção de um software ou aplicativo mobile.
+
+
+2 - Defina brevemente e descreva a razão para se utilizar os padrões de projetos abaixo:
+MVC
+DAO
+Singleton
+ MVC (Model-View-Controller) é um padrão de projeto de arquitetura de software que separa a lógica de negócios (model), a interface do usuário (view) e a lógica de controle (controller) em três componentes distintos e independentes.
+ DAO (Data Access Object) é um padrão de projeto que abstrai o acesso a dados, permitindo que a aplicação se concentre na lógica de negócios sem se preocupar com os detalhes de acesso ao banco de dados.
+ Singleton é um padrão de projeto de criação que garante que uma classe tenha apenas uma instância em todo o ciclo de vida da aplicação, garantindo que todos os objetos que precisam da mesma instância compartilhem os mesmos dados.
+
+
+3 - O que é JDBC e como ele se relaciona com bancos de dados e a programação em Java? 
+ JDBC é uma API  do Java que fornece um conjunto de classes e interfaces para permitir que aplicativos Java se comuniquem com bancos de dados relacionais. 
+
+
+4 - O que significa “CRUD” e como ele se  relaciona com os quatro métodos que implementamos em nossas classes DAO?
+"CRUD" é um acrônimo que significa Create, Read, Update e Delete, que são as quatro operações básicas de banco de dados que podem ser realizadas em registros individuais.
+Em termos de programação orientada a objetos, um padrão comum é criar classes DAO que encapsulam a lógica para realizar essas operações em um banco de dados. Cada um dos quatro métodos da classe DAO geralmente corresponde a uma das operações CRUD, Create, Read, Update e Delete.
+
+
+
+5 - Explique brevemente e com suas palavras qual a utilidade das três classes abaixo:
+Connection
+PreparedStatement
+Statement
+
+Connection: Esta classe representa uma conexão com um banco de dados. Ele é usado para estabelecer uma conexão com o banco de dados e obter um objeto Statement ou PreparedStatement para executar comandos SQL.
+
+Instrução: Esta classe representa um objeto que executa um comando SQL simples no banco de dados. Os comandos SQL são passados ​​para o objeto Statement por meio do método execute(), que retorna um objeto ResultSet com os resultados da consulta.
+
+PreparedStatement: Esta classe representa um objeto que executa um comando SQL preparado em um banco de dados. O comando SQL é passado para um objeto PreparedStatement através do método setXxx(), onde Xxx pode ser Int, String, etc., dependendo do tipo de dado do parâmetro a ser definido. O método executeQuery() é usado para executar uma consulta e retornar um objeto ResultSet contendo os resultados.
