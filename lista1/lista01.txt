@@ -27,8 +27,25 @@ Connection
 PreparedStatement
 Statement
 
-Connection: Esta classe representa uma conexão com um banco de dados. Ele é usado para estabelecer uma conexão com o banco de dados e obter um objeto Statement ou PreparedStatement para executar comandos SQL.
+ Connection: Esta classe representa uma conexão com um banco de dados. Ele é usado para estabelecer uma conexão com o banco de dados e obter um objeto Statement ou PreparedStatement para executar comandos SQL.
 
 Instrução: Esta classe representa um objeto que executa um comando SQL simples no banco de dados. Os comandos SQL são passados ​​para o objeto Statement por meio do método execute(), que retorna um objeto ResultSet com os resultados da consulta.
 
 PreparedStatement: Esta classe representa um objeto que executa um comando SQL preparado em um banco de dados. O comando SQL é passado para um objeto PreparedStatement através do método setXxx(), onde Xxx pode ser Int, String, etc., dependendo do tipo de dado do parâmetro a ser definido. O método executeQuery() é usado para executar uma consulta e retornar um objeto ResultSet contendo os resultados.
+
+
+
+6 - Considere a execução de uma query SQL no banco de dados. Se esperamos um retorno de dados do banco de dados devemos usar a classe Statement ou PreparedStatement? Justifique. (Dica: é possível usar ambas; procure a diferença técnica entre as classes.).
+
+A classe Statement é usada para executar consultas estáticas e não aceita parâmetros na consulta SQL. Isso significa que todas as informações necessárias para executar a consulta devem ser definidas diretamente na string da consulta.
+Já a classe PreparedStatement é usada para executar consultas dinâmicas e aceita parâmetros na consulta SQL.
+
+Usar a classe PreparedStatement tem várias vantagens em relação à classe Statement como segurança, uma melhor performace e legibilidade ao separar explicitamente os parâmetros da consulta SQL, o código fica mais legível e menos propenso a erros.
+Ou seja, se você dseja obter um retorno de dados do banco de dados e precisa passar parâmetros dinamicamente, se torna mais viavel utilizar a classe PreparedStatement. Caso contrário, você pode usar a classe Statement.
+
+
+
+
+7- Com as suas próprias palavras, diferencie SWING do WINDOWBUILDER.
+
+SWING é uma biblioteca padrão de componentes de interface gráfica que vem com o kit de desenvolvimento de software Java (Java Development Kit - JDK), o WINDOWBUILDER é uma ferramenta visual de design gráfico para construir interfaces gráficas de usuário.
